@@ -1,86 +1,48 @@
 body {
-  background: linear-gradient(270deg, #9786be, #727997, #55475e, #000000);
-  background-size: 600% 600%;
-  animation: bgMove 25s ease infinite;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #f0f0f0;
-  scroll-behavior: smooth;
-  color: wheat;
+    background-color: black;
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-@keyframes bgMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+p {
+    padding: 2%;
 }
 
-h1 {
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 16px;
-  width: fit-content;
-  padding: 1%;
-  margin: 40px auto;
-  border: 2px solid rgb(255, 255, 255);
-  transition: 0.3s ease-in-out;
-  backdrop-filter: blur(12px);
+.vidcard {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.082);
+    width: fit-content;
+    padding: 2%;
+    margin: 7% auto;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+
 }
 
-.videos {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
+.songb {
+    background-color: rgba(127, 255, 212, 0.082);
+    border-radius: 16px;
+    padding: 2%;
+    width: fit-content;
+    margin: 15px auto;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+
 }
 
-.video-card video {
-  max-width: 80%;
-  border-radius: 16px;
-  border: 2px solid rgb(255, 255, 255);
-  transition: 0.3s ease-in-out;
+.vidcard video {
+    border-radius: 16px;
+    border: 1px solid white;
+    transition: 0.3s ease-in-out;
+
 }
 
-.video-card {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  padding: 1%;
-  text-align: center;
-  border: 2px solid rgb(255, 255, 255);
-  backdrop-filter: blur(10px);
-  transition: 0.3s ease-in-out;
-}
+.songb:hover,
+.vidcard:hover,
+.vidcard video:hover {
+    transform: scale(1.1);
 
-.song-box {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
-  padding: 1%;
-  width: fit-content;
-  margin: 15px auto;
-  border: 2px solid rgb(255, 255, 255);
-  transition: 0.3s ease;
-}
-
-.pw {
-  padding-top: 10%;
-}
-
-.song-box:hover,
-.video-card:hover,
-.video-card video:hover {
-  transform: scale(1.05);
-  border-color: #ffffff;
-}
-
-h1:hover {
-  transform: scale(1.1);
-  border-color: #4361ee;
-  box-shadow: 0 0 25px rgba(67, 97, 238, 0.7);
-}
-
-@media (max-width: 768px) {
-  * {
-    transition: none !important;
-    animation: none !important;
-  }
 }
