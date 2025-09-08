@@ -66,8 +66,35 @@
     <div class="video-card">
       <p>LILY FLORES</p>
       <div class="video-box">
-        <video src="meow.mp4"  type="video/mp4" controls width="700px"></video>
-      </div>
+        <video id="vid" src="meow.mp4"  type="video/mp4" width="700px"></video>
+        <div class="tv">
+          <button id="play-button" onclick="playVideo()">Play</button>
+          <button id="mute-button" onclick="muteVideo()">Mute</button>
+          <script>
+            let playButton = document.getElementById("play-button");
+            let video = document.getElementById("vid");
+            function playVideo()
+            {
+              if (video.paused || video.ended)
+            {
+              video.play();
+            }
+            else
+            {
+              video.pause();
+            }
+              
+            }
+
+
+
+            function muteVideo()
+            {
+              video.muted = !video.muted;
+            }
+          </script>
+        </div>
+      </div>  
         <div class="song-box">
         <p>Favorite Song: <br> hesitation - Heart Plus Up! </p>
         <audio controls>
