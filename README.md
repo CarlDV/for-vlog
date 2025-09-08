@@ -1,4 +1,4 @@
-# 📹 For-Vlog Activity
+# 📹 Vlog Activity
 
 This repository contains our group activity for **COMPUTER PROGRAMMING - HTML**.  
 Live site here: 👉 [**Visit Project**](https://carldv.github.io/for-vlog/)
