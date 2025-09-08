@@ -1,5 +1,9 @@
 body {
-    background-color: black;
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: wheat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -18,6 +22,7 @@ p {
     margin: 7% auto;
     border-radius: 15px;
     border: 1px solid white;
+    backdrop-filter: blur(3px);
     transition: 0.3s ease-in-out;
 
 }
@@ -43,6 +48,5 @@ p {
 .songb:hover,
 .vidcard:hover,
 .vidcard video:hover {
-    transform: scale(1.1);
-
+    transform: scale(1.05);
 }
