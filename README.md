@@ -23,6 +23,7 @@ You can view the live project here: 👉 [**Visit Project**](https://carldv.gith
 
 ## 🖼️ Preview
 ![Screenshot](screenshot.png)
+![Screenshot](screenshot2.png)
 
 ---
 
